@@ -1,0 +1,1032 @@
+{
+  "interactionModel": {
+      "languageModel": {
+          "invocationName": "toynbee",
+          "intents": [
+              {
+                  "name": "AMAZON.FallbackIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.CancelIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.HelpIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.StopIntent",
+                  "samples": []
+              },
+              {
+                  "name": "AMAZON.NavigateHomeIntent",
+                  "samples": []
+              },
+              {
+                  "name": "getNextTrains",
+                  "slots": [
+                      {
+                          "name": "fromStation",
+                          "type": "RAIL_STATION"
+                      },
+                      {
+                          "name": "toStation",
+                          "type": "RAIL_STATION"
+                      }
+                  ],
+                  "samples": [
+                      "what are the next trains from {fromStation} to {toStation}"
+                  ]
+              }
+          ],
+          "types": [
+              {
+                  "name": "RAIL_STATION",
+                  "values": [
+                      {
+                          "id": "90001",
+                          "name": {
+                              "value": "Cynwyd"
+                          }
+                      },
+                      {
+                          "id": "90002",
+                          "name": {
+                              "value": "Bala"
+                          }
+                      },
+                      {
+                          "id": "90003",
+                          "name": {
+                              "value": "Wynnefield Avenue"
+                          }
+                      },
+                      {
+                          "id": "90004",
+                          "name": {
+                              "value": "30th Street Station"
+                          }
+                      },
+                      {
+                          "id": "90005",
+                          "name": {
+                              "value": "Suburban Station"
+                          }
+                      },
+                      {
+                          "id": "90006",
+                          "name": {
+                              "value": "Jefferson Station"
+                          }
+                      },
+                      {
+                          "id": "90007",
+                          "name": {
+                              "value": "Temple University"
+                          }
+                      },
+                      {
+                          "id": "90008",
+                          "name": {
+                              "value": "North Broad"
+                          }
+                      },
+                      {
+                          "id": "90009",
+                          "name": {
+                              "value": "Wayne Junction"
+                          }
+                      },
+                      {
+                          "id": "90201",
+                          "name": {
+                              "value": "Newark"
+                          }
+                      },
+                      {
+                          "id": "90202",
+                          "name": {
+                              "value": "Churchmans Crossing"
+                          }
+                      },
+                      {
+                          "id": "90203",
+                          "name": {
+                              "value": "Wilmington"
+                          }
+                      },
+                      {
+                          "id": "90204",
+                          "name": {
+                              "value": "Claymont"
+                          }
+                      },
+                      {
+                          "id": "90205",
+                          "name": {
+                              "value": "Marcus Hook"
+                          }
+                      },
+                      {
+                          "id": "90206",
+                          "name": {
+                              "value": "Highland Avenue"
+                          }
+                      },
+                      {
+                          "id": "90207",
+                          "name": {
+                              "value": "Chester TC"
+                          }
+                      },
+                      {
+                          "id": "90208",
+                          "name": {
+                              "value": "Eddystone"
+                          }
+                      },
+                      {
+                          "id": "90209",
+                          "name": {
+                              "value": "Crum Lynne"
+                          }
+                      },
+                      {
+                          "id": "90210",
+                          "name": {
+                              "value": "Ridley Park"
+                          }
+                      },
+                      {
+                          "id": "90211",
+                          "name": {
+                              "value": "Prospect Park"
+                          }
+                      },
+                      {
+                          "id": "90212",
+                          "name": {
+                              "value": "Norwood"
+                          }
+                      },
+                      {
+                          "id": "90213",
+                          "name": {
+                              "value": "Glenolden"
+                          }
+                      },
+                      {
+                          "id": "90214",
+                          "name": {
+                              "value": "Folcroft"
+                          }
+                      },
+                      {
+                          "id": "90215",
+                          "name": {
+                              "value": "Sharon Hill"
+                          }
+                      },
+                      {
+                          "id": "90216",
+                          "name": {
+                              "value": "Curtis Park"
+                          }
+                      },
+                      {
+                          "id": "90217",
+                          "name": {
+                              "value": "Darby"
+                          }
+                      },
+                      {
+                          "id": "90218",
+                          "name": {
+                              "value": "Allegheny"
+                          }
+                      },
+                      {
+                          "id": "90219",
+                          "name": {
+                              "value": "East Falls"
+                          }
+                      },
+                      {
+                          "id": "90220",
+                          "name": {
+                              "value": "Wissahickon"
+                          }
+                      },
+                      {
+                          "id": "90221",
+                          "name": {
+                              "value": "Manayunk"
+                          }
+                      },
+                      {
+                          "id": "90222",
+                          "name": {
+                              "value": "Ivy Ridge"
+                          }
+                      },
+                      {
+                          "id": "90223",
+                          "name": {
+                              "value": "Miquon"
+                          }
+                      },
+                      {
+                          "id": "90224",
+                          "name": {
+                              "value": "Spring Mill"
+                          }
+                      },
+                      {
+                          "id": "90225",
+                          "name": {
+                              "value": "Conshohocken"
+                          }
+                      },
+                      {
+                          "id": "90226",
+                          "name": {
+                              "value": "Norristown TC"
+                          }
+                      },
+                      {
+                          "id": "90227",
+                          "name": {
+                              "value": "Main Street"
+                          }
+                      },
+                      {
+                          "id": "90228",
+                          "name": {
+                              "value": "Elm St"
+                          }
+                      },
+                      {
+                          "id": "90301",
+                          "name": {
+                              "value": "Elwyn Station"
+                          }
+                      },
+                      {
+                          "id": "90302",
+                          "name": {
+                              "value": "Media"
+                          }
+                      },
+                      {
+                          "id": "90303",
+                          "name": {
+                              "value": "Moylan-Rose Valley"
+                          }
+                      },
+                      {
+                          "id": "90304",
+                          "name": {
+                              "value": "Wallingford"
+                          }
+                      },
+                      {
+                          "id": "90305",
+                          "name": {
+                              "value": "Swarthmore"
+                          }
+                      },
+                      {
+                          "id": "90306",
+                          "name": {
+                              "value": "Morton-Rutledge"
+                          }
+                      },
+                      {
+                          "id": "90307",
+                          "name": {
+                              "value": "Secane"
+                          }
+                      },
+                      {
+                          "id": "90308",
+                          "name": {
+                              "value": "Primos"
+                          }
+                      },
+                      {
+                          "id": "90309",
+                          "name": {
+                              "value": "Clifton-Aldan"
+                          }
+                      },
+                      {
+                          "id": "90310",
+                          "name": {
+                              "value": "Gladstone"
+                          }
+                      },
+                      {
+                          "id": "90311",
+                          "name": {
+                              "value": "Lansdowne"
+                          }
+                      },
+                      {
+                          "id": "90312",
+                          "name": {
+                              "value": "Fernwood"
+                          }
+                      },
+                      {
+                          "id": "90313",
+                          "name": {
+                              "value": "Angora"
+                          }
+                      },
+                      {
+                          "id": "90314",
+                          "name": {
+                              "value": "49th St"
+                          }
+                      },
+                      {
+                          "id": "90315",
+                          "name": {
+                              "value": "Noble"
+                          }
+                      },
+                      {
+                          "id": "90316",
+                          "name": {
+                              "value": "Rydal"
+                          }
+                      },
+                      {
+                          "id": "90317",
+                          "name": {
+                              "value": "Meadowbrook"
+                          }
+                      },
+                      {
+                          "id": "90318",
+                          "name": {
+                              "value": "Bethayres"
+                          }
+                      },
+                      {
+                          "id": "90319",
+                          "name": {
+                              "value": "Philmont"
+                          }
+                      },
+                      {
+                          "id": "90320",
+                          "name": {
+                              "value": "Forest Hills"
+                          }
+                      },
+                      {
+                          "id": "90321",
+                          "name": {
+                              "value": "Somerton"
+                          }
+                      },
+                      {
+                          "id": "90322",
+                          "name": {
+                              "value": "Trevose"
+                          }
+                      },
+                      {
+                          "id": "90323",
+                          "name": {
+                              "value": "Neshaminy"
+                          }
+                      },
+                      {
+                          "id": "90324",
+                          "name": {
+                              "value": "Langhorne"
+                          }
+                      },
+                      {
+                          "id": "90325",
+                          "name": {
+                              "value": "Woodbourne"
+                          }
+                      },
+                      {
+                          "id": "90326",
+                          "name": {
+                              "value": "Yardley"
+                          }
+                      },
+                      {
+                          "id": "90327",
+                          "name": {
+                              "value": "West Trenton"
+                          }
+                      },
+                      {
+                          "id": "90401",
+                          "name": {
+                              "value": "Airport Terminal E-F"
+                          }
+                      },
+                      {
+                          "id": "90402",
+                          "name": {
+                              "value": "Airport Terminal C-D"
+                          }
+                      },
+                      {
+                          "id": "90403",
+                          "name": {
+                              "value": "Airport Terminal B"
+                          }
+                      },
+                      {
+                          "id": "90404",
+                          "name": {
+                              "value": "Airport Terminal A"
+                          }
+                      },
+                      {
+                          "id": "90405",
+                          "name": {
+                              "value": "Eastwick"
+                          }
+                      },
+                      {
+                          "id": "90406",
+                          "name": {
+                              "value": "University City"
+                          }
+                      },
+                      {
+                          "id": "90407",
+                          "name": {
+                              "value": "Fern Rock TC"
+                          }
+                      },
+                      {
+                          "id": "90408",
+                          "name": {
+                              "value": "Melrose Park"
+                          }
+                      },
+                      {
+                          "id": "90409",
+                          "name": {
+                              "value": "Elkins Park"
+                          }
+                      },
+                      {
+                          "id": "90410",
+                          "name": {
+                              "value": "Jenkintown-Wyncote"
+                          }
+                      },
+                      {
+                          "id": "90411",
+                          "name": {
+                              "value": "Glenside"
+                          }
+                      },
+                      {
+                          "id": "90412",
+                          "name": {
+                              "value": "Ardsley"
+                          }
+                      },
+                      {
+                          "id": "90413",
+                          "name": {
+                              "value": "Roslyn"
+                          }
+                      },
+                      {
+                          "id": "90414",
+                          "name": {
+                              "value": "Crestmont"
+                          }
+                      },
+                      {
+                          "id": "90415",
+                          "name": {
+                              "value": "Willow Grove"
+                          }
+                      },
+                      {
+                          "id": "90416",
+                          "name": {
+                              "value": "Hatboro"
+                          }
+                      },
+                      {
+                          "id": "90417",
+                          "name": {
+                              "value": "Warminster"
+                          }
+                      },
+                      {
+                          "id": "90501",
+                          "name": {
+                              "value": "Thorndale"
+                          }
+                      },
+                      {
+                          "id": "90502",
+                          "name": {
+                              "value": "Downingtown"
+                          }
+                      },
+                      {
+                          "id": "90503",
+                          "name": {
+                              "value": "Whitford"
+                          }
+                      },
+                      {
+                          "id": "90504",
+                          "name": {
+                              "value": "Exton"
+                          }
+                      },
+                      {
+                          "id": "90505",
+                          "name": {
+                              "value": "Malvern"
+                          }
+                      },
+                      {
+                          "id": "90506",
+                          "name": {
+                              "value": "Paoli"
+                          }
+                      },
+                      {
+                          "id": "90507",
+                          "name": {
+                              "value": "Daylesford"
+                          }
+                      },
+                      {
+                          "id": "90508",
+                          "name": {
+                              "value": "Berwyn"
+                          }
+                      },
+                      {
+                          "id": "90509",
+                          "name": {
+                              "value": "Devon"
+                          }
+                      },
+                      {
+                          "id": "90510",
+                          "name": {
+                              "value": "Strafford"
+                          }
+                      },
+                      {
+                          "id": "90511",
+                          "name": {
+                              "value": "Wayne"
+                          }
+                      },
+                      {
+                          "id": "90512",
+                          "name": {
+                              "value": "St. Davids"
+                          }
+                      },
+                      {
+                          "id": "90513",
+                          "name": {
+                              "value": "Radnor"
+                          }
+                      },
+                      {
+                          "id": "90514",
+                          "name": {
+                              "value": "Villanova"
+                          }
+                      },
+                      {
+                          "id": "90515",
+                          "name": {
+                              "value": "Rosemont"
+                          }
+                      },
+                      {
+                          "id": "90516",
+                          "name": {
+                              "value": "Bryn Mawr"
+                          }
+                      },
+                      {
+                          "id": "90517",
+                          "name": {
+                              "value": "Haverford"
+                          }
+                      },
+                      {
+                          "id": "90518",
+                          "name": {
+                              "value": "Ardmore"
+                          }
+                      },
+                      {
+                          "id": "90519",
+                          "name": {
+                              "value": "Wynnewood"
+                          }
+                      },
+                      {
+                          "id": "90520",
+                          "name": {
+                              "value": "Narberth"
+                          }
+                      },
+                      {
+                          "id": "90521",
+                          "name": {
+                              "value": "Merion"
+                          }
+                      },
+                      {
+                          "id": "90522",
+                          "name": {
+                              "value": "Overbrook"
+                          }
+                      },
+                      {
+                          "id": "90523",
+                          "name": {
+                              "value": "North Hills"
+                          }
+                      },
+                      {
+                          "id": "90524",
+                          "name": {
+                              "value": "Oreland"
+                          }
+                      },
+                      {
+                          "id": "90525",
+                          "name": {
+                              "value": "Ft Washington"
+                          }
+                      },
+                      {
+                          "id": "90526",
+                          "name": {
+                              "value": "Ambler"
+                          }
+                      },
+                      {
+                          "id": "90527",
+                          "name": {
+                              "value": "Penllyn"
+                          }
+                      },
+                      {
+                          "id": "90528",
+                          "name": {
+                              "value": "Gwynedd Valley"
+                          }
+                      },
+                      {
+                          "id": "90529",
+                          "name": {
+                              "value": "North Wales"
+                          }
+                      },
+                      {
+                          "id": "90530",
+                          "name": {
+                              "value": "Pennbrook"
+                          }
+                      },
+                      {
+                          "id": "90531",
+                          "name": {
+                              "value": "Lansdale"
+                          }
+                      },
+                      {
+                          "id": "90532",
+                          "name": {
+                              "value": "Fortuna"
+                          }
+                      },
+                      {
+                          "id": "90533",
+                          "name": {
+                              "value": "Colmar"
+                          }
+                      },
+                      {
+                          "id": "90534",
+                          "name": {
+                              "value": "Link Belt"
+                          }
+                      },
+                      {
+                          "id": "90535",
+                          "name": {
+                              "value": "Chalfont"
+                          }
+                      },
+                      {
+                          "id": "90536",
+                          "name": {
+                              "value": "New Britain"
+                          }
+                      },
+                      {
+                          "id": "90537",
+                          "name": {
+                              "value": "Delaware Valley College"
+                          }
+                      },
+                      {
+                          "id": "90538",
+                          "name": {
+                              "value": "Doylestown"
+                          }
+                      },
+                      {
+                          "id": "90539",
+                          "name": {
+                              "value": "9th St"
+                          }
+                      },
+                      {
+                          "id": "90701",
+                          "name": {
+                              "value": "Trenton"
+                          }
+                      },
+                      {
+                          "id": "90702",
+                          "name": {
+                              "value": "Levittown-Tullytown"
+                          }
+                      },
+                      {
+                          "id": "90703",
+                          "name": {
+                              "value": "Bristol"
+                          }
+                      },
+                      {
+                          "id": "90704",
+                          "name": {
+                              "value": "Croydon"
+                          }
+                      },
+                      {
+                          "id": "90705",
+                          "name": {
+                              "value": "Eddington"
+                          }
+                      },
+                      {
+                          "id": "90706",
+                          "name": {
+                              "value": "Cornwells Heights"
+                          }
+                      },
+                      {
+                          "id": "90707",
+                          "name": {
+                              "value": "Torresdale"
+                          }
+                      },
+                      {
+                          "id": "90708",
+                          "name": {
+                              "value": "Holmesburg Jct"
+                          }
+                      },
+                      {
+                          "id": "90709",
+                          "name": {
+                              "value": "Tacony"
+                          }
+                      },
+                      {
+                          "id": "90710",
+                          "name": {
+                              "value": "Bridesburg"
+                          }
+                      },
+                      {
+                          "id": "90711",
+                          "name": {
+                              "value": "North Philadelphia Amtrak"
+                          }
+                      },
+                      {
+                          "id": "90712",
+                          "name": {
+                              "value": "Wister"
+                          }
+                      },
+                      {
+                          "id": "90713",
+                          "name": {
+                              "value": "Germantown"
+                          }
+                      },
+                      {
+                          "id": "90714",
+                          "name": {
+                              "value": "Washington Lane"
+                          }
+                      },
+                      {
+                          "id": "90715",
+                          "name": {
+                              "value": "Stenton"
+                          }
+                      },
+                      {
+                          "id": "90716",
+                          "name": {
+                              "value": "Sedgwick"
+                          }
+                      },
+                      {
+                          "id": "90717",
+                          "name": {
+                              "value": "Mount Airy"
+                          }
+                      },
+                      {
+                          "id": "90718",
+                          "name": {
+                              "value": "Wyndmoor"
+                          }
+                      },
+                      {
+                          "id": "90719",
+                          "name": {
+                              "value": "Gravers"
+                          }
+                      },
+                      {
+                          "id": "90720",
+                          "name": {
+                              "value": "Chestnut Hill East"
+                          }
+                      },
+                      {
+                          "id": "90801",
+                          "name": {
+                              "value": "Chestnut Hill West"
+                          }
+                      },
+                      {
+                          "id": "90802",
+                          "name": {
+                              "value": "Highland"
+                          }
+                      },
+                      {
+                          "id": "90803",
+                          "name": {
+                              "value": "St. Martins"
+                          }
+                      },
+                      {
+                          "id": "90804",
+                          "name": {
+                              "value": "Allen Lane"
+                          }
+                      },
+                      {
+                          "id": "90805",
+                          "name": {
+                              "value": "Carpenter"
+                          }
+                      },
+                      {
+                          "id": "90806",
+                          "name": {
+                              "value": "Upsal"
+                          }
+                      },
+                      {
+                          "id": "90807",
+                          "name": {
+                              "value": "Tulpehocken"
+                          }
+                      },
+                      {
+                          "id": "90808",
+                          "name": {
+                              "value": "Chelten Avenue"
+                          }
+                      },
+                      {
+                          "id": "90809",
+                          "name": {
+                              "value": "Queen Lane"
+                          }
+                      },
+                      {
+                          "id": "90810",
+                          "name": {
+                              "value": "North Philadelphia"
+                          }
+                      },
+                      {
+                          "id": "90811",
+                          "name": {
+                              "value": "Olney"
+                          }
+                      },
+                      {
+                          "id": "90812",
+                          "name": {
+                              "value": "Lawndale"
+                          }
+                      },
+                      {
+                          "id": "90813",
+                          "name": {
+                              "value": "Cheltenham"
+                          }
+                      },
+                      {
+                          "id": "90814",
+                          "name": {
+                              "value": "Ryers"
+                          }
+                      },
+                      {
+                          "id": "90815",
+                          "name": {
+                              "value": "Fox Chase"
+                          }
+                      }
+                  ]
+              }
+          ]
+      },
+      "dialog": {
+          "intents": [
+              {
+                  "name": "getNextTrains",
+                  "confirmationRequired": false,
+                  "prompts": {},
+                  "slots": [
+                      {
+                          "name": "fromStation",
+                          "type": "RAIL_STATION",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.1028064093396.798405075444"
+                          }
+                      },
+                      {
+                          "name": "toStation",
+                          "type": "RAIL_STATION",
+                          "confirmationRequired": false,
+                          "elicitationRequired": true,
+                          "prompts": {
+                              "elicitation": "Elicit.Slot.951251484306.831925914464"
+                          }
+                      }
+                  ]
+              }
+          ],
+          "delegationStrategy": "SKILL_RESPONSE"
+      },
+      "prompts": [
+          {
+              "id": "Elicit.Slot.1028064093396.798405075444",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "What station are you departing from?"
+                  }
+              ]
+          },
+          {
+              "id": "Elicit.Slot.951251484306.831925914464",
+              "variations": [
+                  {
+                      "type": "PlainText",
+                      "value": "Which station is your destination?"
+                  }
+              ]
+          }
+      ]
+  }
+}
