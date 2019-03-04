@@ -28,11 +28,15 @@ const GetNextTrainsHandler = {
     const toSlot = handlerInput.requestEnvelope.request.intent.slots.ToStation;
     let from;
     let to;
-    if (fromSlot && fromSlot.value) {
-      from = fromSlot.value.toLowerCase();
+    if (fromSlot && fromSlot.resolutions && fromSlot.resolutions.resolutionsPerAuthority.length > 0) {
+      fromStation = fromSlot.resolutions.resolutionsPerAuthority[0].values[0].value
+      console.log(fromStation)
+      from = fromStation.name
     }
-    if (toSlot && toSlot.value) {
-      to = toSlot.value.toLowerCase();
+    if (toSlot && toSlot.resolutions && toSlot.resolutions.resolutionsPerAuthority.length > 0) {
+      toStation = toSlot.resolutions.resolutionsPerAuthority[0].values[0].value
+      console.log(toStation)
+      to = toStation.name
     }
     const speechText = `You requested to go from ${from} to ${to}`
     return handlerInput.responseBuilder
