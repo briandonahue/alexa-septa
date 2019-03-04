@@ -24,19 +24,19 @@
           "samples": []
         },
         {
-          "name": "getNextTrains",
+          "name": "GetNextTrains",
           "slots": [
             {
-              "name": "fromStation",
+              "name": "FromStation",
               "type": "RAIL_STATION"
             },
             {
-              "name": "toStation",
+              "name": "ToStation",
               "type": "RAIL_STATION"
             }
           ],
           "samples": [
-            "what are the next trains from {fromStation} to {toStation}"
+            "what are the next trains from {FromStation} to {ToStation}"
           ]
         }
       ],
@@ -981,12 +981,12 @@
     "dialog": {
       "intents": [
         {
-          "name": "getNextTrains",
+          "name": "GetNextTrains",
           "confirmationRequired": false,
           "prompts": {},
           "slots": [
             {
-              "name": "fromStation",
+              "name": "FromStation",
               "type": "RAIL_STATION",
               "elicitationRequired": true,
               "confirmationRequired": false,
@@ -995,7 +995,7 @@
               }
             },
             {
-              "name": "toStation",
+              "name": "ToStation",
               "type": "RAIL_STATION",
               "elicitationRequired": true,
               "confirmationRequired": false,
