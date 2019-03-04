@@ -1,0 +1,20 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "toynbee-alexa-dev-toynbeeSkill"
+        },
+        "interfaces": []
+      }
+    },
+    "manifestVersion": "1.0",
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "name": "Toynbee"
+        }
+      }
+    }
+  }
+}

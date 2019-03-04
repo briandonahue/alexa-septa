@@ -31,8 +31,12 @@ provider:
 #  environment:
 #    variable1: value1
 
+package:
+  include:
+    - ../src/**
+    - ../node_modules/**
 functions:
-  mySkill:
-    handler: mySkill.handler
+  toynbeeSkill:
+    handler: toynbee.handler
     events:
       - alexaSkill: amzn1.ask.skill.dff8cae5-ebc0-4ddd-a22d-8f46e20b5188
