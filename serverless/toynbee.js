@@ -1,5 +1,8 @@
 const Alexa = require('ask-sdk-core');
 
+const rp = require('request-promise-native')
+
+
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
@@ -38,12 +41,32 @@ const GetNextTrainsHandler = {
       console.log(toStation)
       to = toStation.name
     }
-    const speechText = `You requested to go from ${from} to ${to}`
-    return handlerInput.responseBuilder
-      .speak(speechText)
-      .reprompt(speechText)
-      .withSimpleCard('Hello World', speechText)
-      .getResponse();
+
+    return rp(`http://www3.septa.org/hackathon/NextToArrive/${encodeURIComponent(from)}/${encodeURIComponent(to)}/3`)
+    .then((res) => {
+      let speechText = `No trains found.`
+      let cardText = speechText
+      let json = JSON.parse(res)
+      console.log('Response: ', json)
+      if(Array.isArray(json) && json.length > 0) {
+        speechText = `The next three trains departing from ${from} and continuing to ${to} are:\n`
+        cardText = ''
+        json.forEach((t) => {
+          speechText += `The ${t.orig_departure_time} ${t.orig_line} arriving at ${t.orig_arrival_time}. `
+          cardText += `${t.orig_departure_time}: ${t.orig_line} arriving at ${t.orig_arrival_time} \n`
+        })
+      }
+      return { speechText, cardText }
+    })
+    .then((text) => {
+      return handlerInput.responseBuilder
+        .speak(text.speechText)
+        .reprompt(text.speechText)
+        .withSimpleCard('Trains', text.cardText)
+        .getResponse();
+
+    })
+
   }
 }
 const skillBuilder = Alexa.SkillBuilders.custom();

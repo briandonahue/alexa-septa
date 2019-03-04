@@ -8,7 +8,9 @@
   },
   "dependencies": {
     "ask-sdk-core": "^2.4.0",
-    "ask-sdk-model": "^1.12.0"
+    "ask-sdk-model": "^1.12.0",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
   },
   "devDependencies": {
     "eslint": "^5.15.0",
