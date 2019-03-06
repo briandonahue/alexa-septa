@@ -23,13 +23,13 @@
     "publishingInformation": {
       "locales": {
         "en-US": {
-          "name": "Toynbee - SEPTA Regional Rail Schedules",
+          "name": "Next SEPTA Regional Rail Train",
           "smallIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/8a1d/a99827f7364444efa7117e10441bfa6c/APP_ICON?versionId=8j2L4F_MntkbaNYzQwYnSy9vTYtX2PgA&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1551986279&Signature=33aTMFrWALLJH8G0xxc9UO%2B7CJE%3D",
           "largeIconUri": "https://s3.amazonaws.com/CAPS-SSE/echo_developer/63a4/d4e66baf946a45a2984b5f64e5fa651d/APP_ICON_LARGE?versionId=i4akgf7_Ksq87TipRiIubazirbJt1Sd5&AWSAccessKeyId=AKIAJFEYRBGIHK2BBYKA&Expires=1551986279&Signature=KeR2GY5yG7GnBVqfk1EuTeeGNe0%3D",
-          "summary": "Get the next trains between two SETPA Regional Rail Stations",
+          "summary": "Get the upcoming departure times for SEPTA trains",
           "description": "Ask Alexa for the next trains from your local station to your destination, so you never miss a train!",
           "examplePhrases": [
-            "Alexa, ask Toynbee for the next trains from Glenside to Jefferson Station",
+            "Alexa, ask SEPTA Trains for the next trains from Glenside to Jefferson Station",
             ""
           ],
           "keywords": [

@@ -1,7 +1,8 @@
 const LaunchHandler = require('./launch')
 const GetNextTrainHandler = require('./get-next-train')
 const YesHandler = require('./yes')
-const NoHandler = require('./no')
+const CancelHandler = require('./cancel')
+const HelpHandler = require('./help')
 
 module.exports = {
   LaunchHandler: {
@@ -24,11 +25,20 @@ module.exports = {
     },
     handle: YesHandler
   },
-  NoHandler : {
+  CancelHandler : {
     canHandle(handlerInput) {
       return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.NoIntent'
+      && (handlerInput.requestEnvelope.request.intent.name === 'AMAZON.NoIntent'
+      || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.CancelIntent'
+      || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.StopIntent')
     },
-    handle: NoHandler
+    handle: CancelHandler
+  },
+  HelpHandler : {
+    canHandle(handlerInput) {
+      return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
+    },
+    handle: HelpHandler
   },
 }

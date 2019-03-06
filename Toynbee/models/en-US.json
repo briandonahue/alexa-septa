@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "toynbee",
+      "invocationName": "septa trains",
       "intents": [
         {
           "name": "AMAZON.FallbackIntent",
