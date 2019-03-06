@@ -24,7 +24,15 @@
           "samples": []
         },
         {
-          "name": "GetNextTrains",
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "GetNextTrain",
           "slots": [
             {
               "name": "FromStation",
@@ -36,7 +44,7 @@
             }
           ],
           "samples": [
-            "what are the next trains from {FromStation} to {ToStation}"
+            "what's the next train from {FromStation} to {ToStation}"
           ]
         }
       ],
@@ -981,7 +989,7 @@
     "dialog": {
       "intents": [
         {
-          "name": "GetNextTrains",
+          "name": "GetNextTrain",
           "confirmationRequired": false,
           "prompts": {},
           "slots": [
