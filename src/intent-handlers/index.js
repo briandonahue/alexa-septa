@@ -40,5 +40,5 @@ module.exports = {
       && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
     },
     handle: HelpHandler
-  },
+  }
 }
