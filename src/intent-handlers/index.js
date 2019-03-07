@@ -1,10 +1,17 @@
 const LaunchHandler = require('./launch')
 const GetNextTrainHandler = require('./get-next-train')
 const YesHandler = require('./yes')
+const CanFulfillHandler = require('./can-fulfill')
 const CancelHandler = require('./cancel')
 const HelpHandler = require('./help')
 
 module.exports = {
+  CanFulfillHandler: {
+    canHandle(handlerInput) {
+      return handlerInput.requestEnvelope.request.type === 'CanFulfillIntentRequest';
+    },
+    handle: CanFulfillHandler
+  },
   LaunchHandler: {
     canHandle(handlerInput) {
       return handlerInput.requestEnvelope.request.type === 'LaunchRequest';

@@ -5,7 +5,11 @@
         "endpoint": {
           "uri": "toynbee-alexa-dev-toynbeeSkill"
         },
-        "interfaces": []
+        "interfaces": [
+          {
+            "type":"CAN_FULFILL_INTENT_REQUEST"
+          }
+        ]
       }
     },
     "manifestVersion": "1.0",
