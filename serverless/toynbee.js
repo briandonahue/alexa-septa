@@ -1,20 +1,12 @@
 const Alexa = require('ask-sdk-core');
 
 const skillBuilder = Alexa.SkillBuilders.custom();
-const { CanFulfillHandler, LaunchHandler, GetNextTrainHandler, YesHandler, CancelHandler, HelpHandler } = require ('src/intent-handlers')
+const handlers = require ('src/intent-handlers')
 
-console.log(LaunchHandler)
-console.log(GetNextTrainHandler)
+const handlerArray = Object.values(handlers)
 
 module.exports = {
   handler: skillBuilder
-  
-  .addRequestHandlers(
-    LaunchHandler,
-    GetNextTrainHandler,
-    YesHandler,
-    CancelHandler,
-    HelpHandler
-  )
+  .addRequestHandlers(...handlerArray)
   .lambda()
 }

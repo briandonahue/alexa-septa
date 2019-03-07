@@ -6,11 +6,11 @@
       "merge": {},
       "resources": {
         "manifest": {
-          "eTag": "8042ced394d1392731c28076bd6076a0"
+          "eTag": "97e91e13ee122806b48d8d4fb277de82"
         },
         "interactionModel": {
           "en-US": {
-            "eTag": "c7774b9fecf45b5c0d70e4dce2d6d6d5"
+            "eTag": "2767a255ef311b4f3126278447b0295e"
           }
         }
       }

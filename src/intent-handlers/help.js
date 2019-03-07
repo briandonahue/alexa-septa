@@ -1,9 +1,13 @@
 module.exports = async (handlerInput) => {
-  const text = 'You can ask me for the next departure time of a train between two stations. ' + 
-           'For example, you can say \"what\'s the next train from Jenkintown to Suburban Station\"'
+  let speechText = ''
+  if(handlerInput.requestEnvelope.request.intent.name === 'AMAZON.FallbackIntent') {
+    speechText += 'I\'m not sure I can help with that, but '
+  }
+  speechText += 'you can ask me for the next departure time of a train between two stations. ' + 
+           'For example, you can ask \"what\'s the next train from Manayunk to 30th Street?\"'
   return handlerInput.responseBuilder
-    .speak(text)
-    .reprompt(text)
+    .speak(speechText)
+    .reprompt("Say 'help' or 'cancel.'")
     .getResponse()
 }
 

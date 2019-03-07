@@ -16,6 +16,10 @@
           "samples": []
         },
         {
+          "name": "AMAZON.RepeatIntent",
+          "samples": []
+        },
+        {
           "name": "AMAZON.StopIntent",
           "samples": []
         },
@@ -36,16 +40,29 @@
           "slots": [
             {
               "name": "FromStation",
-              "type": "RAIL_STATION"
+              "type": "RAIL_STATION",
+              "samples": [
+                "{FromStation}"
+              ]
             },
             {
               "name": "ToStation",
-              "type": "RAIL_STATION"
+              "type": "RAIL_STATION",
+              "samples": [
+                "{ToStation}"
+              ]
             }
           ],
           "samples": [
+            "next departure from {FromStation} to {ToStation}",
+            "next train from {FromStation} to {ToStation}",
+            "when's the next train from {FromStation} to {ToStation}",
             "what's the next train from {FromStation} to {ToStation}"
           ]
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
         }
       ],
       "types": [
@@ -84,7 +101,10 @@
             {
               "id": "90006",
               "name": {
-                "value": "Jefferson Station"
+                "value": "Jefferson Station",
+                "synonyms": [
+                  "Market East"
+                ]
               }
             },
             {

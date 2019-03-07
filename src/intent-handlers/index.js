@@ -4,6 +4,7 @@ const YesHandler = require('./yes')
 const CanFulfillHandler = require('./can-fulfill')
 const CancelHandler = require('./cancel')
 const HelpHandler = require('./help')
+const RepeatHandler = require('./repeat')
 
 module.exports = {
   CanFulfillHandler: {
@@ -28,7 +29,9 @@ module.exports = {
   YesHandler : {
     canHandle(handlerInput) {
       return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.YesIntent'
+      && (handlerInput.requestEnvelope.request.intent.name === 'AMAZON.YesIntent' ||
+      handlerInput.requestEnvelope.request.intent.name === 'AMAZON.NextIntent')
+
     },
     handle: YesHandler
   },
@@ -44,8 +47,16 @@ module.exports = {
   HelpHandler : {
     canHandle(handlerInput) {
       return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
+      && (handlerInput.requestEnvelope.request.intent.name === 'AMAZON.HelpIntent'
+      || handlerInput.requestEnvelope.request.intent.name === 'AMAZON.FallbackIntent')
     },
     handle: HelpHandler
+  },
+  RepeatHandler : {
+    canHandle(handlerInput) {
+      return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'AMAZON.RepeatIntent'
+    },
+    handle: RepeatHandler
   }
 }
