@@ -1020,7 +1020,13 @@
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Slot.1028064093396.798405075444"
-              }
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.785357708882.186902126691.948461072226"
+                }
+              ]
             },
             {
               "name": "ToStation",
@@ -1029,7 +1035,13 @@
               "confirmationRequired": false,
               "prompts": {
                 "elicitation": "Elicit.Slot.951251484306.831925914464"
-              }
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.785357708882.849085330871.897908434883"
+                }
+              ]
             }
           ]
         }
@@ -1052,6 +1064,24 @@
           {
             "type": "PlainText",
             "value": "Which station is your destination?"
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.785357708882.186902126691.948461072226",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I did not recognize your departure station."
+          }
+        ]
+      },
+      {
+        "id": "Slot.Validation.785357708882.849085330871.897908434883",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I did not recognize your destination station."
           }
         ]
       }

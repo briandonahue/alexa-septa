@@ -1,7 +1,6 @@
 const LaunchRequestHandler = (handlerInput) => {
   const speechText = 'Welcome to the Septa Trains Skill, '
-  + 'you can ask me for the next trains between two stations. '
-  + 'To hear an example, say \"help.\"'
+  + 'for an example of what you can ask me, say \"help.\"'
 
 
   return handlerInput.responseBuilder
